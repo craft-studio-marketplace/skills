@@ -6,13 +6,13 @@ Ein Claude Code Skill, der KI-typische Schreibmuster erkennt und entfernt. Basie
 
 ```bash
 # Empfohlen: Repository klonen
-git clone https://github.com/craft-studio-marketplace/claude-skills.git
-cp -r claude-skills/skills/humanizer ~/.claude/skills/
+git clone https://github.com/craft-studio-marketplace/skills.git craft-studio-skills
+cp -r craft-studio-skills/skills/humanizer ~/.claude/skills/
 
 # Alternativ: Nur SKILL.md kopieren
 mkdir -p ~/.claude/skills/humanizer
 curl -o ~/.claude/skills/humanizer/SKILL.md \
-  https://raw.githubusercontent.com/craft-studio-marketplace/claude-skills/main/skills/humanizer/SKILL.md
+  https://raw.githubusercontent.com/craft-studio-marketplace/skills/main/skills/humanizer/SKILL.md
 ```
 
 ## Verwendung

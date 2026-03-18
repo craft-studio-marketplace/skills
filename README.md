@@ -10,8 +10,8 @@ Ein Skill ist eine Markdown-Datei (`SKILL.md`), die Claude Code mit einem spezif
 
 ```bash
 # Skill klonen (empfohlen)
-git clone https://github.com/craft-studio-marketplace/claude-skills.git
-cp -r claude-skills/skills/humanizer ~/.claude/skills/
+git clone https://github.com/craft-studio-marketplace/skills.git craft-studio-skills
+cp -r craft-studio-skills/skills/humanizer ~/.claude/skills/
 
 # Oder einzelne Skill-Datei kopieren
 mkdir -p ~/.claude/skills/humanizer

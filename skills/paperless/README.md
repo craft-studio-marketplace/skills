@@ -21,8 +21,8 @@ Der Skill verbindet Claude Code mit deiner Paperless-ngx Instanz. Beim Aufruf vo
 ## Installation
 
 ```bash
-git clone https://github.com/craft-studio-marketplace/claude-skills.git
-cp -r claude-skills/skills/paperless ~/.claude/skills/
+git clone https://github.com/craft-studio-marketplace/skills.git craft-studio-skills
+cp -r craft-studio-skills/skills/paperless ~/.claude/skills/
 ```
 
 ## Konfiguration

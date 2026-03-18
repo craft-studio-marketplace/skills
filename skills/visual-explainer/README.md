@@ -6,8 +6,8 @@ Ein Claude Code Skill, der komplexe Informationen als schoen gestaltete, selbst-
 
 ```bash
 # Empfohlen: Repository klonen (beinhaltet Templates und Referenzen)
-git clone https://github.com/craft-studio-marketplace/claude-skills.git
-cp -r claude-skills/skills/visual-explainer ~/.claude/skills/
+git clone https://github.com/craft-studio-marketplace/skills.git craft-studio-skills
+cp -r craft-studio-skills/skills/visual-explainer ~/.claude/skills/
 
 # Prompt-Templates für Slash-Commands (optional)
 cp ~/.claude/skills/visual-explainer/prompts/*.md ~/.claude/prompts/ 2>/dev/null || true

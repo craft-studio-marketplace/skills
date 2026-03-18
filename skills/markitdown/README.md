@@ -6,13 +6,13 @@ Ein Claude Code Skill zur Konvertierung von Dateien und Office-Dokumenten in Mar
 
 ```bash
 # Repository klonen
-git clone https://github.com/craft-studio-marketplace/claude-skills.git
-cp -r claude-skills/skills/markitdown ~/.claude/skills/
+git clone https://github.com/craft-studio-marketplace/skills.git craft-studio-skills
+cp -r craft-studio-skills/skills/markitdown ~/.claude/skills/
 
 # Oder nur SKILL.md
 mkdir -p ~/.claude/skills/markitdown
 curl -o ~/.claude/skills/markitdown/SKILL.md \
-  https://raw.githubusercontent.com/craft-studio-marketplace/claude-skills/main/skills/markitdown/SKILL.md
+  https://raw.githubusercontent.com/craft-studio-marketplace/skills/main/skills/markitdown/SKILL.md
 ```
 
 ### Python-Paket installieren
