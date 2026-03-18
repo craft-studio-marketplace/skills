@@ -1,51 +1,33 @@
-# MarkItDown
+# markitdown
 
-Ein Claude Code Skill zur Konvertierung von Dateien und Office-Dokumenten in Markdown. Nutzt Microsofts MarkItDown-Bibliothek.
+Convert files and office documents to Markdown using Microsoft's MarkItDown library. Supports 15+ formats including PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcription), HTML, CSV, JSON, XML, ZIP, YouTube URLs, and EPubs.
+
+> **Note:** For PDFs with tables or complex layouts, `opendataloader-pdf` offers significantly better accuracy (benchmark: 0.90 vs. 0.29). Use markitdown for non-PDF formats or simple text PDFs.
 
 ## Installation
 
 ```bash
-# Repository klonen
 git clone https://github.com/craft-studio-marketplace/skills.git craft-studio-skills
 cp -r craft-studio-skills/skills/markitdown ~/.claude/skills/
-
-# Oder nur SKILL.md
-mkdir -p ~/.claude/skills/markitdown
-curl -o ~/.claude/skills/markitdown/SKILL.md \
-  https://raw.githubusercontent.com/craft-studio-marketplace/skills/main/skills/markitdown/SKILL.md
 ```
 
-### Python-Paket installieren
-
+Requires:
 ```bash
 pip install 'markitdown[all]'
 ```
 
-## Verwendung
-
-Der Skill wird automatisch aktiviert bei Erwaehnung von Dokumentkonvertierung, PDF zu Markdown, oder Dateiextraktion:
+## Usage
 
 ```
-Konvertiere diese PDF in Markdown: bericht.pdf
-Extrahiere den Text aus diesem Word-Dokument: proposal.docx
+/markitdown
 ```
 
-## Unterstuetzte Formate
+Then provide the path to the file you want to convert.
 
-| Format | Beschreibung |
-|--------|--------------|
-| PDF | Vollstaendige Textextraktion |
-| DOCX | Word-Dokumente mit Tabellen und Formatierung |
-| PPTX | PowerPoint-Folien mit Notizen |
-| XLSX | Excel-Tabellen |
-| Bilder | JPEG, PNG, GIF, WebP mit OCR |
-| Audio | WAV, MP3 mit Transkription |
-| HTML | Webseiten |
-| CSV, JSON, XML | Strukturierte Daten |
-| ZIP | Archivinhalt |
-| EPUB | E-Books |
-| YouTube | Videountertitel abrufen |
+## Supported Formats
 
-## Lizenz
+PDF, DOCX, PPTX, XLSX, JPEG, PNG, GIF, WebP, WAV, MP3, HTML, CSV, JSON, XML, ZIP, EPUB, YouTube URLs
 
-MIT — basiert auf [microsoft/markitdown](https://github.com/microsoft/markitdown)
+## License
+
+MIT

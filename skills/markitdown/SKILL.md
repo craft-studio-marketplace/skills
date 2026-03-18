@@ -1,6 +1,7 @@
 ---
 name: markitdown
 description: Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcription), HTML, CSV, JSON, XML, ZIP, YouTube URLs, EPubs and more. Use when converting documents to markdown, extracting text from PDFs, processing office files, or when user mentions document conversion, PDF to markdown, or file extraction.
+allowed-tools: Bash, Read, Write
 ---
 
 # MarkItDown - File to Markdown Conversion
@@ -21,7 +22,7 @@ MarkItDown is a Python tool developed by Microsoft for converting various file f
 
 | Format | Description | Notes |
 |--------|-------------|-------|
-| **PDF** | Portable Document Format | Full text extraction |
+| **PDF** | Portable Document Format | Full text extraction — **Hinweis:** Für PDFs mit Tabellen oder komplexem Layout ist `opendataloader-pdf` deutlich genauer (0.90 vs. 0.29 Benchmark-Score). Bei einfachen Text-PDFs ist markitdown ausreichend. |
 | **DOCX** | Microsoft Word | Tables, formatting preserved |
 | **PPTX** | PowerPoint | Slides with notes |
 | **XLSX** | Excel spreadsheets | Tables and data |
