@@ -1,6 +1,6 @@
 # Claude Code Skills — Marketplace
 
-Ein kuratierter Marktplatz für Claude Code Skills. Hier findest du wiederverwendbare Skills für deinen KI-Assistenten — bereitgestellt von [Craft Studio](https://craft.studio) und der Community.
+Ein kuratierter Marktplatz für Claude Code Skills. Hier findest du wiederverwendbare Skills für deinen KI-Assistenten — bereitgestellt von Craft Studio und der Community.
 
 ## Was ist ein Skill?
 
